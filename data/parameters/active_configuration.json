@@ -1,0 +1,29 @@
+{
+  "status": "active_research_configuration",
+  "cutoff": "2026-09-17",
+  "capital_usd": {
+    "ficc": 60000000.0,
+    "equities": 25000000.0,
+    "commodities": 5000000.0,
+    "crypto": 5000000.0,
+    "fx": 5000000.0
+  },
+  "equity_rule": "expanded_quality25__own__cost10bp",
+  "commodity_rule": "shrink_minvar50_conservative_extra_day_signal_lag_own_sigma",
+  "nav_path": "data/frozen/module_nav_daily_usd.csv",
+  "baseline_path": "not_included_prior_round",
+  "baseline_sha256": "b28a3c93e8c2a8ec0c55790737791e6fd3c265cc02b122b08cb36b4bdf25797e",
+  "decision": "Adopt broader PIT profit/CFO coverage at unchanged tilt strength. Retain quarterly commodity incumbent. Do not promote post-diagnostic profit gate: additional gain disappears and Sharpe worsens under public-vol proxy; commodity semiannual improvement is too small and fails weekly/recent robustness.",
+  "issuer_risk_policy_path": "data/parameters/issuer_policy.json",
+  "issuer_policy_status": "proposed; not verified multiseller history and does not change headline NAV",
+  "promotion_rule": "CAGR and Sharpe exceed current matched baseline; judge drawdown, costs, timing and valuation scenarios. No significance, forecast, dealer-quote or blind-OOS claim.",
+  "qualifications": [
+    "Retrospective universe, missing delistings and historical capitalisation proxies remain.",
+    "Twenty-one pool issuers have usable PIT quality at least once; actual selected coverage is nine issuers, not all Asia.",
+    "Public 30-day option indices are risk sensitivities; actual 5Y bespoke IV, smile and issuer curve absent.",
+    "Historical main model is conditional on issuer performance and does not contain issuer defaults.",
+    "Three independent issuer groups are proposed legal-credit risk design, not implemented historical issuance.",
+    "Targets have caps; between-rebalance drift can exceed target caps.",
+    "FICC/FX/Crypto are frozen this iteration. FICC historical MTM CAGR is not its 20Y forward scenario."
+  ]
+}

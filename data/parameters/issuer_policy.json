@@ -1,0 +1,23 @@
+{
+  "status": "proposed risk design; issuer identities and equivalent terms unverified",
+  "scope_capital_usd": 30000000.0,
+  "max_target_share_per_independent_issuer_group": 0.3333333333333333,
+  "minimum_independent_legal_groups": 3,
+  "aggregation": "equity plus commodity notes by guarantor/parent/legal credit claim, not stock issuer or product name",
+  "collateral_assumed": false,
+  "protected_note_floor_conditional_on_issuer": true,
+  "default_recovery_stress": [
+    0,
+    0.4
+  ],
+  "credit_mtm_spread_stress_bp": [
+    100,
+    200
+  ],
+  "promotion_conditions": [
+    "Different bank names count separately only after legal guarantor/parent-risk review.",
+    "Comparable basket, participation, fee and protection terms must fit par budget per issuer.",
+    "If only one issuer can be used, show the concentrated unsecured risk; do not assume segregation or diversification."
+  ],
+  "historical_main_nav_changes_from_issuer_division": false
+}

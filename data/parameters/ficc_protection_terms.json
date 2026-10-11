@@ -1,0 +1,60 @@
+{
+  "model_status": "theoretical research contracts; no tradable CUSIP option or firm premium quote",
+  "as_of": "2026-09-17",
+  "underlier": "synthetic fixed-maturity US Treasury zero-coupon price per $1 face, marked to Federal Reserve Svensson fitted nominal zero curve; not 912803HY2 transaction history",
+  "underlier_cusip_proxy_only": "912803HY2 is principal STRIP due 2046-08-15 per 2026-08 MSPD; target horizon from 2026-09-17 is 2046-09-17, 33 days later. Index path remains curve proxy.",
+  "exercise": "European cash settlement at expiry; payoff = face_notional * max(strike - zero_price_at_expiry,0), settlement cash reinvested in VUSXX proxy",
+  "strike_policy": "Each put strike is 80% of the inception forward price for the corresponding expiry, so the buffer is 20% against that expiry's curve-implied forward mark.",
+  "pricing": "Black-76 put on bond forward; discount and forward derived from Svensson curve; volatility is trailing 5-year realized log-vol of the same fixed maturity zero-price proxy, clipped 1%-150%.",
+  "premium_budget_usd": 980708.63,
+  "expiry_staging_years": [
+    5,
+    10,
+    15
+  ],
+  "premium_per_face_legs": [
+    {
+      "expiry_years": 5,
+      "expiry_date": "2031-09-17",
+      "maturity_date_underlier": "2046-09-17",
+      "strike_price_per_1_face": 0.3462041721933913,
+      "t0_forward_price_per_1_face": 0.4327552152417391,
+      "t0_discount_factor": 0.7890608263710348,
+      "t0_black76_vol_annualized": 0.20477985173832347,
+      "premium_per_1_face": 0.027839061758366847,
+      "face_notional_usd": 6992452.402771918,
+      "initial_model_premium_usd": 194663.31428320808
+    },
+    {
+      "expiry_years": 10,
+      "expiry_date": "2036-09-17",
+      "maturity_date_underlier": "2046-09-17",
+      "strike_price_per_1_face": 0.44725021705619517,
+      "t0_forward_price_per_1_face": 0.559062771320244,
+      "t0_discount_factor": 0.6107904251049114,
+      "t0_black76_vol_annualized": 0.20477985173832347,
+      "premium_per_1_face": 0.04829335724330186,
+      "face_notional_usd": 6992452.402771918,
+      "initial_model_premium_usd": 337689.0018938487
+    },
+    {
+      "expiry_years": 15,
+      "expiry_date": "2041-09-17",
+      "maturity_date_underlier": "2046-09-17",
+      "strike_price_per_1_face": 0.5965983572888792,
+      "t0_forward_price_per_1_face": 0.745747946611099,
+      "t0_discount_factor": 0.4578895447272286,
+      "t0_black76_vol_annualized": 0.20477985173832347,
+      "premium_per_1_face": 0.06412003800629487,
+      "face_notional_usd": 6992452.402771918,
+      "initial_model_premium_usd": 448356.3138229433
+    }
+  ],
+  "equal_face_notional_per_leg_usd": 6992452.402771918,
+  "total_face_notional_across_three_legs_usd": 20977357.208315752,
+  "coverage_vs_60m_face_per_expiry_pct": 11.654087337953197,
+  "total_model_premium_usd": 980708.6300000001,
+  "historical_calibration_vol_annualized": 0.20477985173832347,
+  "protection_budget_is_not_full_coverage": true,
+  "20y_terminal_put_expiry_not_added": "No 20Y put is purchased because the underlying fixed-maturity zero pays par at that horizon; 5/10/15-year staged expiry puts cover interim mark-to-market only."
+}

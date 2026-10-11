@@ -1,0 +1,638 @@
+{
+  "2330.TW": {
+    "company": "TSMC",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "005930.KS": {
+    "company": "Samsung Electronics",
+    "region": "Korea",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "000660.KS": {
+    "company": "SK Hynix",
+    "region": "Korea",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "8035.T": {
+    "company": "Tokyo Electron",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2454.TW": {
+    "company": "MediaTek",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6857.T": {
+    "company": "Advantest",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6981.T": {
+    "company": "Murata Manufacturing",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2317.TW": {
+    "company": "Hon Hai Precision",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2303.TW": {
+    "company": "United Microelectronics",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "3711.TW": {
+    "company": "ASE Technology",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "3008.TW": {
+    "company": "Largan Precision",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "3034.TW": {
+    "company": "Novatek Microelectronics",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6762.T": {
+    "company": "TDK",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6723.T": {
+    "company": "Renesas Electronics",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6963.T": {
+    "company": "Rohm",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "3436.T": {
+    "company": "SUMCO",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6146.T": {
+    "company": "Disco",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6920.T": {
+    "company": "Lasertec",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "7735.T": {
+    "company": "SCREEN Holdings",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "7741.T": {
+    "company": "Hoya",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6758.T": {
+    "company": "Sony Group",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6752.T": {
+    "company": "Panasonic",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6971.T": {
+    "company": "Kyocera",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6753.T": {
+    "company": "Sharp",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "6724.T": {
+    "company": "Seiko Epson",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "7731.T": {
+    "company": "Nikon",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "7751.T": {
+    "company": "Canon",
+    "region": "Japan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2382.TW": {
+    "company": "Quanta Computer",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2357.TW": {
+    "company": "Asustek Computer",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2353.TW": {
+    "company": "Acer",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "4938.TW": {
+    "company": "Pegatron",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2308.TW": {
+    "company": "Delta Electronics",
+    "region": "Taiwan",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2382.HK": {
+    "company": "Sunny Optical",
+    "region": "Greater China",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "2018.HK": {
+    "company": "AAC Technologies",
+    "region": "Greater China",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "0981.HK": {
+    "company": "SMIC",
+    "region": "Greater China",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "0992.HK": {
+    "company": "Lenovo Group",
+    "region": "Greater China",
+    "theme": "SEMI",
+    "first_data": "2015-12-01"
+  },
+  "1810.HK": {
+    "company": "Xiaomi",
+    "region": "Greater China",
+    "theme": "SEMI",
+    "first_data": "2018-07-09"
+  },
+  "0700.HK": {
+    "company": "Tencent Holdings",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "BABA": {
+    "company": "Alibaba Group",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "BIDU": {
+    "company": "Baidu",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "JD": {
+    "company": "JD.com",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "NTES": {
+    "company": "NetEase",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "PDD": {
+    "company": "PDD Holdings",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2018-07-26"
+  },
+  "3690.HK": {
+    "company": "Meituan",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2018-09-20"
+  },
+  "1024.HK": {
+    "company": "Kuaishou Technology",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2021-02-05"
+  },
+  "BILI": {
+    "company": "Bilibili",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2018-03-28"
+  },
+  "TCOM": {
+    "company": "Trip.com Group",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "VIPS": {
+    "company": "Vipshop Holdings",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "MOMO": {
+    "company": "Hello Group",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "3888.HK": {
+    "company": "Kingsoft",
+    "region": "Greater China",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "035420.KS": {
+    "company": "Naver",
+    "region": "Korea",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "035720.KS": {
+    "company": "Kakao",
+    "region": "Korea",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "4755.T": {
+    "company": "Rakuten Group",
+    "region": "Japan",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "4689.T": {
+    "company": "LY Corp (Yahoo Japan)",
+    "region": "Japan",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "4751.T": {
+    "company": "CyberAgent",
+    "region": "Japan",
+    "theme": "INTERNET",
+    "first_data": "2015-12-01"
+  },
+  "SE": {
+    "company": "Sea Limited",
+    "region": "South-East Asia",
+    "theme": "INTERNET",
+    "first_data": "2017-10-20"
+  },
+  "GRAB": {
+    "company": "Grab Holdings",
+    "region": "South-East Asia",
+    "theme": "INTERNET",
+    "first_data": "2020-12-01"
+  },
+  "NAUKRI.NS": {
+    "company": "Info Edge India",
+    "region": "India",
+    "theme": "INTERNET",
+    "first_data": "2015-11-30"
+  },
+  "6861.T": {
+    "company": "Keyence",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6501.T": {
+    "company": "Hitachi",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6954.T": {
+    "company": "Fanuc",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6503.T": {
+    "company": "Mitsubishi Electric",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6645.T": {
+    "company": "Omron",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6506.T": {
+    "company": "Yaskawa Electric",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6902.T": {
+    "company": "Denso",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "6594.T": {
+    "company": "Nidec",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "7701.T": {
+    "company": "Shimadzu",
+    "region": "Japan",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "002415.SZ": {
+    "company": "Hikvision",
+    "region": "Greater China",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "002236.SZ": {
+    "company": "Dahua Technology",
+    "region": "Greater China",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "002230.SZ": {
+    "company": "iFlytek",
+    "region": "Greater China",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "300024.SZ": {
+    "company": "Siasun Robot",
+    "region": "Greater China",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "600406.SS": {
+    "company": "NARI Technology",
+    "region": "Greater China",
+    "theme": "AI",
+    "first_data": "2015-12-01"
+  },
+  "300750.SZ": {
+    "company": "CATL",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2018-06-11"
+  },
+  "1211.HK": {
+    "company": "BYD",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "300274.SZ": {
+    "company": "Sungrow Power",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "601012.SS": {
+    "company": "Longi Green Energy",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "3800.HK": {
+    "company": "GCL Technology",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "0968.HK": {
+    "company": "Xinyi Solar",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "JKS": {
+    "company": "JinkoSolar",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-11-30"
+  },
+  "002466.SZ": {
+    "company": "Tianqi Lithium",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "1772.HK": {
+    "company": "Ganfeng Lithium",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2018-10-11"
+  },
+  "NIO": {
+    "company": "NIO",
+    "region": "Greater China",
+    "theme": "NEW_ENERGY",
+    "first_data": "2018-09-12"
+  },
+  "051910.KS": {
+    "company": "LG Chem",
+    "region": "Korea",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "006400.KS": {
+    "company": "Samsung SDI",
+    "region": "Korea",
+    "theme": "NEW_ENERGY",
+    "first_data": "2015-12-01"
+  },
+  "373220.KS": {
+    "company": "LG Energy Solution",
+    "region": "Korea",
+    "theme": "NEW_ENERGY",
+    "first_data": "2022-01-27"
+  },
+  "TCS.NS": {
+    "company": "Tata Consultancy Services",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "INFY.NS": {
+    "company": "Infosys",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "WIPRO.NS": {
+    "company": "Wipro",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "HCLTECH.NS": {
+    "company": "HCL Technologies",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "TECHM.NS": {
+    "company": "Tech Mahindra",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "BHARTIARTL.NS": {
+    "company": "Bharti Airtel",
+    "region": "India",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "Z74.SI": {
+    "company": "Singtel",
+    "region": "Singapore",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "6702.T": {
+    "company": "Fujitsu",
+    "region": "Japan",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "6701.T": {
+    "company": "NEC",
+    "region": "Japan",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "9432.T": {
+    "company": "NTT",
+    "region": "Japan",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "9433.T": {
+    "company": "KDDI",
+    "region": "Japan",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "4307.T": {
+    "company": "Nomura Research Institute",
+    "region": "Japan",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "018260.KS": {
+    "company": "Samsung SDS",
+    "region": "Korea",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "017670.KS": {
+    "company": "SK Telecom",
+    "region": "Korea",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "030200.KS": {
+    "company": "KT Corp",
+    "region": "Korea",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "0268.HK": {
+    "company": "Kingdee International",
+    "region": "Greater China",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-12-01"
+  },
+  "0788.HK": {
+    "company": "China Tower",
+    "region": "Greater China",
+    "theme": "IT_SERVICES",
+    "first_data": "2018-08-08"
+  },
+  "VNET": {
+    "company": "21Vianet Group",
+    "region": "Greater China",
+    "theme": "IT_SERVICES",
+    "first_data": "2015-11-30"
+  },
+  "GDS": {
+    "company": "GDS Holdings",
+    "region": "Greater China",
+    "theme": "IT_SERVICES",
+    "first_data": "2016-11-02"
+  },
+  "9983.T": {
+    "company": "Fast Retailing satellite",
+    "region": "Japan",
+    "theme": "SATELLITE_CONSUMER",
+    "first_data": "2015-12-01"
+  },
+  "INDA": {
+    "company": "iShares MSCI India ETF satellite",
+    "region": "India",
+    "theme": "SATELLITE_ETF",
+    "first_data": null
+  }
+}

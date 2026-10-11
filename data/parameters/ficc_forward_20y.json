@@ -1,0 +1,120 @@
+{
+  "as_of": "2026-09-17",
+  "horizon_years": 20,
+  "currency": "USD",
+  "status": "flat-carry illustrative scenario, not probability forecast or historical backtest",
+  "budget_reconciliation": {
+    "capital_base_usd": 60000000.0,
+    "upfront_fee_usd": 600000.0,
+    "initial_net_assets_usd": 59400000.0,
+    "60m_face_strip_market_cost_usd": 20488211.265301302,
+    "zero_price_per_1_face": 0.3414701877550217,
+    "curve_yield_pct": 5.3724745085874686,
+    "credit_growth_pool_after_strip_cost_adjustment_usd": 34931080.104698695,
+    "original_credit_growth_pool_usd": 36851644.4446776,
+    "reallocation_from_credit_pool_usd": 1920564.3399789035,
+    "vusxx_cash_usd": 3000000.0,
+    "protection_budget_usd": 980708.63,
+    "annual_fee_usd": 120000.0,
+    "sum_sources_including_upfront_fee_usd": 60000000.0,
+    "difference_vs_60m_usd": 0.0
+  },
+  "protection": {
+    "no_put_forward_terminal_value_usd": 0.0,
+    "protected_purchase_cost_usd": 980708.63,
+    "per_expiry_face_notional_usd": 6992452.402771918,
+    "face_coverage_each_expiry_pct": 11.654087337953197,
+    "cash_opportunity_cost_vs_unprotected_at_3.6823pct_vusxx_usd": 2021293.111638967,
+    "stress_payoff_not_in_base_projection": true
+  },
+  "credit_yield_proxy": {
+    "weighted_six_bond_eay_pct": 6.066105900212734,
+    "six_bonds": {
+      "TSMC": {
+        "weight_in_six_issuer_sleeve_pct": 11.11111111111111,
+        "yield_eay_pct": 5.647783707712928,
+        "price_date": "2026-09-17"
+      },
+      "Tencent": {
+        "weight_in_six_issuer_sleeve_pct": 11.11111111111111,
+        "yield_eay_pct": 5.866319997367309,
+        "price_date": "2026-09-17"
+      },
+      "LG Energy": {
+        "weight_in_six_issuer_sleeve_pct": 16.666666666666664,
+        "yield_eay_pct": 5.88207887651202,
+        "price_date": "2026-09-17"
+      },
+      "Meituan": {
+        "weight_in_six_issuer_sleeve_pct": 16.666666666666664,
+        "yield_eay_pct": 5.975776711709169,
+        "price_date": "2026-09-17"
+      },
+      "Alibaba": {
+        "weight_in_six_issuer_sleeve_pct": 22.22222222222222,
+        "yield_eay_pct": 6.319442224104943,
+        "price_date": "2026-09-17"
+      },
+      "Reliance": {
+        "weight_in_six_issuer_sleeve_pct": 22.22222222222222,
+        "yield_eay_pct": 6.327590783146353,
+        "price_date": "2026-09-17"
+      }
+    },
+    "method": "weighted current 2026-09-17 contract cashflow yields; assumes no default, no downgrade, reinvestment at constant weighted EAY; coupon/amortization reinvestment and spread migration are collapsed into compound yield. Not a distribution of outcomes."
+  },
+  "terminal_20y_usd": {
+    "strip_face_due_usd": 60000000.0,
+    "credit_pool_gross_future_value_usd": 113434328.5633344,
+    "vusxx_cash_future_value_usd": 6183160.981174299,
+    "protection_put_future_value_base_case_usd": 0.0,
+    "management_fee_future_value_at_blended_hurdle_usd": 4274717.714465767,
+    "protected_total_after_fees_usd": 175342771.83004293,
+    "unprotected_total_after_fees_usd": 177364064.9416819,
+    "protected_net_CAGR_vs_60m_capital_pct": 5.508349882984547,
+    "unprotected_net_CAGR_vs_60m_capital_pct": 5.5688326224209135,
+    "protected_minus_unprotected_flat_scenario_usd": -2021293.111638967
+  },
+  "target_maturity_ladder": {
+    "design": "$15m face each in 5Y,10Y,15Y,20Y curve-priced zero-coupon USTs; the 5/10/15Y principal proceeds are held in cash until year20; 20Y rung pays at terminal date.",
+    "rung_face_usd": 15000000.0,
+    "curve_zero_price_by_rung": {
+      "5": 0.7890349581515863,
+      "10": 0.6108364726816049,
+      "15": 0.4579080736384652,
+      "20": 0.3414701877550217
+    },
+    "rung_market_cost_usd": {
+      "5": 11835524.372273795,
+      "10": 9162547.090224074,
+      "15": 6868621.104576978,
+      "20": 5122052.8163253255
+    },
+    "total_curve_marked_strip_cost_usd": 32988745.383400172,
+    "credit_growth_pool_after_self_financing_usd": 22430545.98659983,
+    "reallocation_from_34_931m_credit_pool_usd": 12500534.118098866,
+    "terminal_strip_cash_at_zero_reinvestment_usd": 60000000.0,
+    "terminal_strip_cash_at_constant_current_VUSXX_3_68pct_usd": 80309554.92402855,
+    "terminal_credit_pool_future_value_usd": 72840402.17687663,
+    "terminal_cash_pocket_future_value_usd": 6183160.981174299,
+    "terminal_management_fee_future_value_usd": 4004603.5683324677,
+    "terminal_total_at_zero_reinvestment_after_fees_usd": 135018959.58971846,
+    "terminal_total_at_constant_current_VUSXX_after_fees_usd": 155328514.513747,
+    "source_budget_check_including_upfront_fee_usd": 60000000.00000001,
+    "is_60m_minimum_strip_principal_maintained_if_reinvestment_rate_zero": true,
+    "guaranteed_terminal_cash_above_60m": false,
+    "note": "The $60m face floor assumes Treasury principal is paid and all earlier proceeds are retained. Any amount above $60m depends on reinvestment rates; this does not equal the pure 20Y lock's market-value path or liquidity profile. Curve costs are not actual quotes/CUSIP trade prices."
+  },
+  "sensitivities": {
+    "credit_yield_minus_200bp_terminal_usd": 139425645.6459465,
+    "credit_yield_plus_200bp_terminal_usd": 226725463.68508863,
+    "cash_yield_minus_200bp_terminal_usd": 173347790.11028984,
+    "cash_yield_plus_200bp_terminal_usd": 178220342.92256597
+  },
+  "risk_limitations": [
+    "A flat-carry 20Y terminal value suppresses default, downgrade, restructuring, spread shock, liquidity and reinvestment risks.",
+    "The $60m STRIPS face input is marked to a Federal Reserve curve price; no historical or current executable STRIPS price is supplied.",
+    "The put is a modeled European overlay with partial notional, not a contract quote; its flat scenario expires worthless.",
+    "The current 6.04% Funding Grid is an annual borrowing cost and is excluded from every asset return."
+  ]
+}
