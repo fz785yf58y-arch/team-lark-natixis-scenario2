@@ -1,15 +1,40 @@
-# Team LARK — Scenario 2 research assets
+# Team LARK | Natixis Investment Strategy Challenge 2026
 
-Frozen inputs through **17 September 2026**. This repository supports the Team
-LARK investment presentation. It contains computational code, derived research
-datasets, model parameters, rebalance and contract ledgers, source provenance,
-and an offline reproduction entry point. It places no orders.
+This repository contains the research behind our Scenario 2 proposal for NKE Private Wealth. We use a USD 100m allocation and a 20-year investment horizon, with market data ending on **17 September 2026**.
 
-## Run the frozen calculation
+Our allocation puts most of the capital into FICC, with smaller allocations to Asian equities, commodities, crypto and FX/Rate. The code, model inputs and portfolio records are here so readers can follow our calculations and reproduce the figures in our presentation.
 
-Python 3.11–3.14 is intended. The recorded acceptance run used Python 3.12.14,
-NumPy 2.3.5 and pandas 2.2.3. No API key or Bloomberg terminal is required for
-the offline calculation.
+## Our allocation
+
+| Module | Initial capital | Main research files |
+|---|---:|---|
+| FICC | $60m | `ficc_forward_20y.json`, bond and contract ledgers, `ficc_protection.py` |
+| Equities | $25m | Quarterly targets and trades, `equity_selection.py`, `equity_quality.py`, `equity_rebalance.py`, equity note engines |
+| Commodities | $5m | GLD/CPER/SLV/USO basket, `commodity_rebalance.py`, `commodity_note.py` |
+| Crypto | $5m | Three-year notes with capped upside, `crypto_note.py` |
+| FX/Rate | $5m | KR4 factor weights, returns and attribution, `kr4.py` |
+
+For FICC, the Treasury component targets $60m of redemption principal. Its modeled purchase cost is about $20.488m, so the face amount is not another $60m of invested capital. The earlier $40m limit was an internal design constraint that we retired for this version. CUSIP 912803HY2 matures on 15 August 2046, 33 days before the policy horizon. In the model, we assume the redemption principal is held for that interval with no extra return. The actual bridge arrangement still needs confirmation.
+
+## Reading the results
+
+We show three calculations because they answer different questions:
+
+| Calculation | What it shows | Result |
+|---|---|---:|
+| Historical-model portfolio | The five modeled USD NAVs combined on the same calendar | CAGR 5.4263%, Sharpe 0.61965, maximum drawdown −15.5846%, terminal value $169.293m |
+| Conditional hybrid | The same four other modules, with an added drift on the historical FICC path | CAGR 7.2567%, Sharpe 0.94932, maximum drawdown −14.4262%, terminal value $200.965m |
+| FICC 20-year flat-carry scenario | Future cash flows under constant reinvestment rates and no base-case default | CAGR 5.50835%, terminal value $175.343m |
+
+The hybrid's 7.26% CAGR needs particular care. We fit its FICC drift after seeing the full historical sample, so that FICC's terminal growth matches the forward scenario. It is a sensitivity analysis, rather than an actual historical FICC return or a forecast. The other four modules stay unchanged.
+
+The FICC forward case assumes that the credit pool keeps earning about 6.0661% a year, cash earns 3.6823%, and there is no default or downgrade. Reinvestment at lower rates would reduce the result. The 6.04% USD Funding Grid is the borrowing rate, not the return on our bonds. Our six-bond historical test uses a credit ETF proxy because we do not have those bonds' complete daily price histories.
+
+The [methods](docs/METHODS.md) explain the calculations. The [limitations](docs/LIMITATIONS.md) cover the assumptions that matter when interpreting them.
+
+## Reproduce the calculations
+
+The offline run needs no API key or Bloomberg terminal. We used Python 3.12.14, NumPy 2.3.5 and pandas 2.2.3 for the saved run. The package is intended for Python 3.11–3.14.
 
 ```bash
 python -m venv .venv
@@ -18,67 +43,20 @@ pip install -r requirements.txt
 python scripts/reproduce.py --output results/local
 ```
 
-The script checks the SHA-256 manifest, reconstructs the equity, commodity and
-crypto note issue/roll/mark calculations, replays FICC component accounting and
-FX native model returns, recomputes daily/weekly metrics, and checks them
-against `checks/expected_metrics.json`. A successful run writes
-`metrics.json`, reconstructed note NAVs, issue ledgers and the common
-historical/hybrid NAV file. `results/accepted/` records the executed acceptance
-run; it is an output snapshot, not an additional independent sample.
+This checks the file hashes, rebuilds the equity, commodity and crypto note calculations, replays FICC accounting and the FX model returns, and recalculates daily and weekly portfolio metrics. It compares the outputs with `checks/expected_metrics.json`.
 
-To work on the constrained commodity weighting code, also install
-`requirements-research.txt`. Raw security data reconstruction is a separate
-workflow described in [data acquisition](docs/DATA_ACQUISITION.md).
+The output folder contains `metrics.json`, reconstructed note NAVs, issue and rollover records, and the combined historical and hybrid NAVs. `results/accepted/` contains our saved run for comparison. It is the same calculation, not a separate test sample.
 
-## Which calculation does this reproduce?
+If you want to work on the constrained commodity weights, also install `requirements-research.txt`. To rebuild the inputs from their original sources, start with [data acquisition](docs/DATA_ACQUISITION.md).
 
-| Quantity | Definition | Published result |
-|---|---|---:|
-| Historical-model portfolio | Five frozen net USD NAVs added on a common calendar | CAGR 5.4263%; Sharpe 0.61965; MDD −15.5846%; terminal $169.293m |
-| Conditional calibrated hybrid | Same four other sleeves; historical FICC path multiplied by a hindsight-fitted drift | CAGR 7.2567%; Sharpe 0.94932; MDD −14.4262%; terminal $200.965m |
-| FICC forward flat-carry case | 20Y terminal cash-flow scenario with constant reinvestment and no base-case default | CAGR 5.50835%; terminal $175.343m |
+## ESG review
 
-The **7.26% hybrid is neither actual historical FICC performance nor a forecast**.
-The script sets FICC's final value to the forward-case target CAGR by choosing
-one drift multiplier after viewing the full sample. No other sleeve is uplifted.
-The 5.51% forward case assumes the credit pool can compound at the current
-weighted six-bond EAY of approximately 6.0661%, cash at 3.6823%, and no default
-or downgrade. The 6.04% USD Funding Grid is a **borrowing cost**, not an asset
-return. See [methods](docs/METHODS.md) and [limitations](docs/LIMITATIONS.md).
+Our [ESG research notes](research/esg_20261011/README.md) record dated public evidence for the six credit issuer groups and the checks we would require before adding exposure or renewing a contract. We keep this review separate from the historical backtest. It has not changed the historical NAVs, and source coverage alone does not mean an issuer has passed the full review.
 
-## Allocation and assets
+## What is included
 
-| Sleeve | Initial capital | Files and computational engines |
-|---|---:|---|
-| FICC | $60m | `ficc_forward_20y.json`, bond/credit/contract ledgers, `ficc_protection.py` |
-| Equities | $25m | Quarter targets/trades, PIT quality audit, `equity_selection.py`, `equity_quality.py`, `equity_rebalance.py`, equity note engines |
-| Commodities | $5m | GLD/CPER/SLV/USO basket allocations, `commodity_rebalance.py`, `commodity_note.py` |
-| Crypto | $5m | 3Y cap-100 note contracts, `crypto_note.py`; pre-IBIT BTC remains a proxy |
-| FX/Rate | $5m | KR4 decision coefficients, native returns, dollar attribution, `kr4.py` |
+The included inputs reproduce our published model calculation. A full reconstruction from original security records would also need the missing historical stock universe, raw provider files, dealer prices, implied-volatility data and final issuer terms. Those gaps remain open.
 
-The FICC 20Y design adopts $60m Treasury **redemption face**, costing about
-$20.488m in the current fitted-curve model. Face is not additional invested
-capital. The older internal $40m cap is retired for this design. CUSIP
-912803HY2 redeems 15 August 2046, 33 days before the policy horizon; redemption
-principal is to be ring-fenced for that bridge, with no additional principal
-yield assumed. Six-issuer historical NAV uses a credit ETF proxy; it does not
-reproduce those six bonds' actual histories.
+We publish derived research inputs and source references, rather than raw third-party downloads or private team spreadsheets. Provider data can change, and a fresh download may differ from the version we used. `docs/source_provenance.json` and `checks/sha256_manifest.json` record file identities and hashes.
 
-## Reproducibility boundary
-
-This package **fully reproduces the disclosed frozen calculation from the
-included research inputs**. It does **not** claim independent reconstruction
-from every original raw security record, a complete point-in-time universe,
-dealer price history, actual option-implied volatility or signed issuer terms.
-
-Raw third-party downloads, teammate private spreadsheets, competition PDF,
-personal paths, API credentials, browser caches and private account data are
-excluded. Derived output inclusion does not grant a license to redistribute
-the originating providers' raw data. Current provider files may be revised;
-a fresh download need not hash-match the captured version. Source URLs and
-excluded-input checksums are in the acquisition manifest.
-
-Code is research material supplied for review and reproduction. No broad
-open-source or raw-data reuse license is implied. No Natixis endorsement or
-issuer commitment is claimed. File identities and checksums are recorded in
-`docs/source_provenance.json` and `checks/sha256_manifest.json`.
+This is a competition research repository. It does not place trades or contain signed issuer quotes. Natixis has not endorsed the proposal. Publishing these files does not grant a general reuse license for our code or for the underlying providers' data, reports and prospectuses.
