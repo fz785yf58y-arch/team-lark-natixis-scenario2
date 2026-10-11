@@ -1,70 +1,51 @@
-# Sources, permissions and independent rebuilding
+# Our data sources
 
-The default run needs only the included research-derived input snapshots.
-Original third-party bulk downloads are not in this public repository. Public
-access alone is not a redistribution license. No repository license is granted
-to original provider data, papers, issuer prospectuses or teammate workbooks.
+The default reproduction run uses the research inputs already included in this repository. This page explains where the underlying data came from and what is still needed to rebuild the study from original security records.
 
-## Data included
+## Files we include
 
-1. Authored model NAVs, strategy target weights, simulated trade/issue ledgers,
-   derived reference-basket index levels and causal volatilities. These permit
-   verification of the team's published calculations, not rebranding of a
-   provider's raw adjusted-price feed. Do not reconstruct/resell provider
-   prices from the derived index files.
-2. Selected official Federal Reserve Svensson coefficients dated before the
-   cutoff. The original US-government source URL and captured file SHA-256 are
-   recorded. This is a fitted discount model, not Treasury transaction data.
-3. Authored issuer-ID/rating/covenant summaries and model terms. A rating's
-   object scope and evidence date remain part of the record; no rating agency
-   bulk data is redistributed.
+We include modeled NAVs, target weights, simulated trade and note-issue records, derived basket index levels and lagged volatilities. These are enough to check our published calculations. They are not a replacement for a provider's raw adjusted-price feed, and should not be used to reconstruct or resell one.
 
-## Raw sources to retrieve separately
+We also include selected pre-cutoff Federal Reserve Svensson coefficients, with the official source URL and the captured file hash. They describe a fitted Treasury curve, rather than Treasury transaction prices. Our issuer-ID, rating and covenant summaries retain the date and scope of the supporting evidence. We do not redistribute rating-agency bulk data.
 
-| Area | Source | Independent rebuild requirement |
+Original bulk downloads, private team workbooks and third-party reports are not part of the public package. A public URL does not by itself permit redistribution. Publishing our derived inputs does not grant rights to the original provider data, papers or prospectuses.
+
+## Sources for a fresh rebuild
+
+| Data | Source used | What needs checking |
 |---|---|---|
-| Equity/ETP prices, splits, dividends | Original Yahoo/OpenBB snapshots | Review provider terms, obtain locally, retain local exchange dates and corporate actions; snapshots may revise |
-| Historical equity pool | Official exchange exits/shares and company reports | Complete delistings/mergers/exit cash flows and announcement-time universe; current pool is partial |
-| Equity quality | SEC Companyfacts and Asian issuer filings | Match units, fiscal end and accession; filed date plus two-day availability lag; preserve source scope |
-| Treasury curve | Federal Reserve nominal yield curve | Official fitted coefficients, with causal last-known-date handling |
-| Commodity/Crypto note discount | US Treasury daily par-yield CSVs | Rates in decimals, dated to17Sep2026; approximate semiannual bootstrap |
-| BTC before IBIT | Coin Metrics community data; captured Coinbase endpoint | Verify license and UTC clock; no complete pre2024 IBIT history exists |
-| IBIT/GLD/CPER/SLV/USO identities | BlackRock, SPDR, USCF and iShares issuer pages | Keep exact ETF-share contractual underlyings, fees and inception dates |
-| Credit history | Captured Nasdaq/issuer CEMB data and distributions | Proxy only; actual six individual bond histories remain missing |
-| VUSXX | Vanguard prospectus and distributions | Monthly distributions throughAug2026; conservative latest-known extension to17Sep2026 |
-| KR4 factors | KR author archive, discount-bond-data.org | Review terms, preserve original date convention then shift returns to outcome date; original archive ends27Jun2025 |
+| Equity and ETP prices, splits and dividends | Yahoo/OpenBB snapshots | Provider terms, local exchange dates, corporate actions and revisions |
+| Historical stock pool | Official exchange exits and share records, company reports | Missing delistings, mergers, exit cash flows and the universe known at each date |
+| Equity quality | SEC Companyfacts and Asian issuer filings | Units, fiscal end, accession and disclosure scope, with a two-day publication lag |
+| Treasury discount curve | Federal Reserve nominal yield curve | Fitted coefficients and the last curve known at each valuation date |
+| Commodity and crypto note discounting | US Treasury daily par-yield CSVs | Rates as decimals, cutoff at 17 September 2026 and the approximate semiannual bootstrap |
+| BTC before IBIT | Coin Metrics community data and a captured Coinbase endpoint | Data rights and UTC timestamps. IBIT has no pre-2024 trading history |
+| IBIT, GLD, CPER, SLV and USO | BlackRock, SPDR, USCF and iShares issuer pages | Exact ETF-share underlyings, inception dates and expenses |
+| Credit return history | Captured Nasdaq/issuer CEMB prices and distributions | CEMB is a proxy. The six individual bond histories are still missing |
+| VUSXX | Vanguard prospectus and distributions | Monthly distributions through August 2026, then a conservative latest-known extension to 17 September |
+| KR4 factors | KR author archive at discount-bond-data.org | Data terms, source date convention and shifting returns to their outcome dates. The archive ends on 27 June 2025 |
 
-`docs/acquisition_manifest.json` lists captured hashes of excluded numerical
-inputs where available. A newly fetched current version is not automatically
-the captured version and must not silently replace it in the published result.
+`docs/acquisition_manifest.json` records the captured hashes of excluded numerical inputs where available. Providers may revise a file after we download it. A new download should therefore be recorded as a new version, rather than silently replacing the input behind the published result.
 
-## Official-source download helper
+## Download helpers
+
+The official-source helper supports these requests:
 
 ```bash
 python scripts/fetch_public_sources.py --source fed-curve --output downloads
 python scripts/fetch_public_sources.py --source treasury-2026 --output downloads
 ```
 
-SEC requests require a contact-bearing `SEC_USER_AGENT` environment variable
-and an explicit CIK; do not commit that environment variable or a credential:
+For SEC data, set a contact-bearing `SEC_USER_AGENT` environment variable and specify the company's CIK. Keep the contact value and any credentials out of the repository.
 
 ```bash
 python scripts/fetch_public_sources.py --source sec-companyfacts --cik 0001046179 --output downloads
 ```
 
-The helper records URL, UTC retrieval timestamp and SHA-256 in the ignored
-downloads directory. It downloads source material only; it does not mutate
-frozen input datasets or claim a complete independent-security rebuild. Raw
-Yahoo, Nasdaq and author-factor datasets require acquisition in line with
-their terms and are intentionally not auto-downloaded or republished here.
+The helper saves the URL, UTC download time and SHA-256 alongside the files in the ignored `downloads` directory. Downloading a source does not alter the published inputs. Yahoo, Nasdaq and the author-factor datasets need to be obtained under their respective terms, so the helper does not automatically download or republish them.
 
-## What remains before a full raw-input re-run?
+## What we still need
 
-The computational functions for selection, quarter trading, commodity weights,
-note budget valuation, staged FICC protection and KR4 timing are included.
-Their inputs are explicit. A full new end-to-end raw-security run still needs
-the captured raw provider files, original quarterly-shortlist export, complete
-PIT pool and current rights/access. The included frozen quarter targets verify
-the adopted portfolio, but they cannot independently establish that absent
-historical securities would not have been selected. This limitation is not
-fixed by rerunning the frozen NAVs.
+The repository includes the selection, quarterly trading, commodity weighting, note valuation, FICC protection and KR4 timing functions. A fresh run from raw security data also needs the original provider files, the original quarterly-shortlist export and a complete point-in-time stock pool, with the necessary access rights.
+
+The saved quarterly targets let readers reproduce the basket we tested. They cannot show which missing or delisted stocks might have entered the shortlist. Completing that historical pool is a separate piece of work.
