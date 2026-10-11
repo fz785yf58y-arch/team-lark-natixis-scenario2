@@ -1,0 +1,281 @@
+[
+  {
+    "file": "data/frozen/module_nav_daily_usd.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/selected_module_nav_daily_usd.csv",
+    "source_sha256": "b38a832177753c0fbc057280b15b314036ca71f6b1749fecadbab2518cdf7718",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/parameters/issuer_policy.json",
+    "source_artifact": "outputs/selection_risk_r3_20261010/risk/issuer_policy.json",
+    "source_sha256": "90d5408ba8aded0c75a26104b64cea66e10bb8050906d9c0b1b343f56f78a36d",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/parameters/ficc_protection_terms.json",
+    "source_artifact": "outputs/scenario2_optimization_20261010/ficc/protection_contracts_2026-09-17.json",
+    "source_sha256": "c30288a39ce7cee16281b16b90f91ccd86f615b39ab9b621ed54eaa94170b895",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/ficc_bond_positions.csv",
+    "source_artifact": "outputs/ficc_551_explained_20261010/current_bond_positions.csv",
+    "source_sha256": "3bb97f7ee03d0ce9307c93935db992c6d919cf4f4637b621adc871cf0d83a4b5",
+    "classification": "public issuer terms and modeled positions; not dealer quotes"
+  },
+  {
+    "file": "data/ledgers/bond_security_identifiers_20261010.csv",
+    "source_artifact": "outputs/ficc_credit_locking_review_20261010/bond_security_identifiers_20261010.csv",
+    "source_sha256": "611976a7e662e21e67a3737a3bdda4149c1fddaed25f2f2eeb94a3ea32b843ea",
+    "classification": "public issuer research summary; check object and date scope"
+  },
+  {
+    "file": "data/ledgers/ratings_asof_20260917.csv",
+    "source_artifact": "outputs/ficc_credit_locking_review_20261010/ratings_asof_20260917.csv",
+    "source_sha256": "ce528f976c1396735487237451991864c73f31a2020626535295e3af68b59d6a",
+    "classification": "public issuer research summary; check object and date scope"
+  },
+  {
+    "file": "data/ledgers/covenant_clause_matrix_20261010.csv",
+    "source_artifact": "outputs/ficc_credit_locking_review_20261010/covenant_clause_matrix_20261010.csv",
+    "source_sha256": "6aac4ecb578f43ca695636b6e4d51993e18db13ba8e4a31394f9e49c23fcf033",
+    "classification": "public issuer research summary; check object and date scope"
+  },
+  {
+    "file": "data/ledgers/ficc_historical_components.csv",
+    "source_artifact": "outputs/scenario2_optimization_20261010/ficc/scenario_nav_components_daily.csv",
+    "classification": "modeled components, curve/CEMB/cash proxies"
+  },
+  {
+    "file": "data/ledgers/equity_quarterly_targets.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/expanded_quality25_target_weights.csv",
+    "source_sha256": "4b35a5247f540b45bedbd09621f899cfd0bb54b55a0875a5adb29fb4707cc314",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/equity_rebalance_ledger.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/expanded_quality25__cost10bp_trade_ledger.csv",
+    "source_sha256": "7837a4644976c3ef1231a09951b331d6e28c426717436c057eba442480696a56",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/equity_pit_quality_audit.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/expanded_quality25_quality_audit.csv",
+    "source_sha256": "207b6f97076d797ac2d8a829b9098b5eb81d2c8e54ebd45cbc4c03ca343b3d92",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/equity_reference_basket_latest.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/expanded_quality25__cost10bp_latest_holdings.csv",
+    "source_sha256": "af1a026446a0355e4a200b829c24a312e025e71b154ee5c3188d2697c762fe00",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/commodity_quarterly_allocations.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/commodities/baseline_r2_cost10bp_allocations.csv",
+    "source_sha256": "22fffa8f5872200fc272ab377bc40795172bd11b5d6ba8530776542448b7a03e",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/parameters/equity_universe_partial.json",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/universe_canonical.json",
+    "source_sha256": "6049f5af51656c730e8bb080f0d8737400e92f30bc0bd103af54003a7660ba61",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/frozen/commodity_note_inputs.csv",
+    "source_artifact": "outputs/selection_risk_r3_20261010/commodities/baseline_r2_cost10bp_own_sigma_full_valuation.csv",
+    "source_sha256": "8ea42467da0c12469821aefe051899494ee65a25fc8e3b184ffc046209eeb92d",
+    "classification": "model input levels/realized-vol/curve; not raw provider download"
+  },
+  {
+    "file": "data/frozen/crypto_note_inputs.csv",
+    "source_artifact": "outputs/scenario2_optimization_20261010_r2/notes/crypto_current_cap100_daily_nav.csv",
+    "source_sha256": "bc7c313b28925651e5c60c6bc68f828c6ba2be0a00005bc04a444674d4f1047a",
+    "classification": "model input levels/realized-vol/curve; not raw provider download"
+  },
+  {
+    "file": "data/frozen/fx_native_nav.csv",
+    "source_artifact": "outputs/scenario2_optimization_20261010/fx_unchanged_daily.csv",
+    "source_sha256": "b9aa57c821d51c121aa961e6337ada86abb2631b0475ce203aae26c3b1a43c09",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/ledgers/fx_daily_attribution.csv",
+    "source_artifact": "outputs/team_lark_pitch_20261011_r7/data/fx_new_chart_daily_pnl.csv",
+    "source_sha256": "a136317c087d633d53d821d50f6ad433f0170610eb60bd23b751741fb0359409",
+    "classification": "authored research output"
+  },
+  {
+    "file": "data/official/fed_svensson_coefficients.csv",
+    "source_url": "https://www.federalreserve.gov/data/nominal-yield-curve.htm",
+    "source_sha256": "2ebdb0a0e94c586445ab9255c7c2d4809f2cdb3776493388453ebb9587ec4342",
+    "classification": "official US government numerical public data, trimmed to cutoff"
+  },
+  {
+    "file": "src/lark/metrics.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010/portfolio_engine.py",
+    "source_sha256": "03fad575957f6a091268061f814f5dc36028be0292d4e8fa58a4cbdd1178dd6e",
+    "functions": [
+      "weekly_marks",
+      "stats"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/commodity_note.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010/notes/run_note_sleeve_repricing.py",
+    "source_sha256": "5fead3b445c03b577131ddd7fad38108c3de77540aadb08e76f7bc85e233c2de",
+    "functions": [
+      "last_known_curve",
+      "interp",
+      "treasury_df",
+      "norm_cdf",
+      "bs_call_put",
+      "trailing_sigma",
+      "next_market_date",
+      "add_years",
+      "commodity_payoff_multiple",
+      "crypto_payoff_multiple",
+      "option_components",
+      "issue_alpha",
+      "note_spec",
+      "simulate_note"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/crypto_note.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010_r2/notes/run_note_sleeve_r2.py",
+    "source_sha256": "f11a0ced9fcedac36056a58cd1b4958fa1f0b28feb4cc05638e85eaae9e9cd6f",
+    "functions": [
+      "last_known_curve",
+      "interp",
+      "treasury_df",
+      "norm_cdf",
+      "bs_call_put",
+      "trailing_sigma",
+      "next_market_date",
+      "add_years",
+      "commodity_payoff_multiple",
+      "crypto_payoff_multiple",
+      "option_components",
+      "issue_alpha",
+      "note_spec",
+      "simulate_note"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/curve.py",
+    "source_artifact": "outputs/scenario2_combined_backtest_20261009/build_ficc_daily_reconstruction.py",
+    "source_sha256": "01a3d42fe6907d826186f172f4cba8d1fbe7ce58a5c797ca151a9b745c55c720",
+    "functions": [
+      "zero_yield_pct",
+      "zprice",
+      "add_year"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/equity_note.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010/equity_note_valuation.py",
+    "source_sha256": "f0d3a2e34d5bfbe1cd3899eac1e53d1c35dcca9396806aafe050ee05beddc512",
+    "functions": [
+      "ndtr",
+      "call"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/equity_note_roll.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010_r2/equities/build_monthly_cash_guard.py",
+    "source_sha256": "1f86f052ec1c0293778daf45f52a5c97e35708eb2e71f1c7646bd913c62dd384",
+    "functions": [
+      "price_note"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/equity_rebalance.py",
+    "source_artifact": "outputs/selection_rules_local_r2_20261010/equity_engine_repaired_snapshot.py",
+    "source_sha256": "a7763b6f49f9504bf847cf0a008294286177fe01b09bcdf93d7c6626e360af18",
+    "functions": [
+      "target_weights_from_source",
+      "constrain_core_caps",
+      "lagged_trade_dates",
+      "turnover",
+      "canon_region",
+      "canon_theme",
+      "actual_cap_breaches",
+      "run_candidate_simple"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/equity_selection.py",
+    "source_artifact": "outputs/selection_rules_research_20261010/equities/run_selection_research.py",
+    "source_sha256": "66089ae00c5517115f2b2fe0508a000e2927f79f1554bcdb35f9ad6189f26ed7",
+    "functions": [
+      "features",
+      "schedule_for_rule"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/equity_quality.py",
+    "source_artifact": "outputs/selection_risk_r3_20261010/equities/run_equity_r3.py",
+    "source_sha256": "8e7d094ae2e50e82fbf745b014599cf2dfd8a16a079bfda5bdc93f299d94d4ca",
+    "functions": [
+      "quality_features",
+      "safe",
+      "tilt"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/commodity_rebalance.py",
+    "source_artifact": "outputs/selection_rules_research_20261010/commodities/research_commodity_rules.py",
+    "source_sha256": "3fabcb4b4bf86e998d5781329ef6a074d024fa9274120f1eb335b14d1a13fb43",
+    "functions": [
+      "bounded_simplex",
+      "create_index"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/kr4.py",
+    "source_artifact": "outputs/fx_rates_competition/optimize_factors.py",
+    "source_sha256": "14290fe30b153f8559d55e4118d73e09753fb237ef8362e81cc482ad030a29a0",
+    "functions": [
+      "base_weights",
+      "signal",
+      "risk",
+      "weights"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "src/lark/ficc_protection.py",
+    "source_artifact": "outputs/scenario2_optimization_20261010/ficc/build_ficc_nav.py",
+    "source_sha256": "26789bef7461719ef8a2cb19615334bee1ec0dab6396c06ffe055bc92e065e4d",
+    "functions": [
+      "add_year",
+      "zero_yield",
+      "zprice",
+      "yearfrac",
+      "normal_cdf",
+      "black76_put",
+      "rolling_vols",
+      "option_schedule",
+      "make_strip_component"
+    ],
+    "adaptation": "Extracted unchanged computational functions; portable globals/imports and explicit inputs replace workspace I/O."
+  },
+  {
+    "file": "docs/fx_research_sources.json",
+    "source_artifact": "outputs/fx_rates_competition/research_sources.json",
+    "source_sha256": "53fdfaa72b8c77b879f0bd0fea7b097d2eb625ba23854a49dfee49325504dd5c",
+    "classification": "source URLs only; no third-party paper copied"
+  }
+]
