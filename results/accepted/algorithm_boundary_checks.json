@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "checks": {
+    "commodity_maturity_algebra": true,
+    "crypto_principal_floor_and_cap": true,
+    "put_expiry_intrinsic": true,
+    "put_zero_vol_forward": true,
+    "staged_put_budget": true,
+    "equity_caps_constants": true,
+    "equity_missing_quality_is_unknown": true,
+    "kr4_no_history_no_exposure": true
+  },
+  "classification": "synthetic boundary checks; not performance or loss probabilities"
+}

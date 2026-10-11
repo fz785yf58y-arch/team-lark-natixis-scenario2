@@ -1,0 +1,500 @@
+{
+  "classification": "frozen research replay, not executable history",
+  "cutoff": "2026-09-17",
+  "baseline": {
+    "ficc": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 59400000.0,
+      "invested_capital_or_window_anchor": 60000000.0,
+      "terminal_nav": 70695674.2796271,
+      "total_return": 0.1782612379937849,
+      "cagr": 0.016601130559829924,
+      "annualized_vol": 0.06155408920985999,
+      "sharpe": -0.02357705663202998,
+      "max_drawdown": -0.23484400116806226,
+      "drawdown_peak_date": "2020-08-06",
+      "drawdown_trough_date": "2022-10-24",
+      "worst_period_return": -0.04305936507266417,
+      "best_period_return": 0.03353842528416995,
+      "expected_shortfall_95_loss": 0.009094292783276212,
+      "expected_shortfall_99_loss": 0.014641472620294407,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "equities": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 24875000.0,
+      "invested_capital_or_window_anchor": 25000000.0,
+      "terminal_nav": 61923976.5498365,
+      "total_return": 1.47695906199346,
+      "cagr": 0.09531243774745324,
+      "annualized_vol": 0.1185079587745614,
+      "sharpe": 0.662248487460951,
+      "max_drawdown": -0.22835759216235874,
+      "drawdown_peak_date": "2020-01-22",
+      "drawdown_trough_date": "2020-03-23",
+      "worst_period_return": -0.05785223259611916,
+      "best_period_return": 0.045937725342901414,
+      "expected_shortfall_95_loss": 0.017277215963765948,
+      "expected_shortfall_99_loss": 0.02828532067748448,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "commodities": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 4975000.0,
+      "invested_capital_or_window_anchor": 5000000.0,
+      "terminal_nav": 10271860.413131827,
+      "total_return": 1.0543720826263656,
+      "cagr": 0.07493921935380787,
+      "annualized_vol": 0.08844545726763134,
+      "sharpe": 0.6394715264786682,
+      "max_drawdown": -0.15493009144406977,
+      "drawdown_peak_date": "2022-03-08",
+      "drawdown_trough_date": "2022-09-26",
+      "worst_period_return": -0.07138300308390677,
+      "best_period_return": 0.034104795668857824,
+      "expected_shortfall_95_loss": 0.013221503510009093,
+      "expected_shortfall_99_loss": 0.023431941612490452,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "crypto": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 4975000.0,
+      "invested_capital_or_window_anchor": 5000000.0,
+      "terminal_nav": 10439943.424457788,
+      "total_return": 1.0879886848915579,
+      "cagr": 0.07669185366962328,
+      "annualized_vol": 0.053537065537629124,
+      "sharpe": 1.0411409149199367,
+      "max_drawdown": -0.08100175453830327,
+      "drawdown_peak_date": "2025-10-06",
+      "drawdown_trough_date": "2026-06-05",
+      "worst_period_return": -0.024721125809729183,
+      "best_period_return": 0.04094869186547134,
+      "expected_shortfall_95_loss": 0.007317734177026644,
+      "expected_shortfall_99_loss": 0.012469472655585623,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "fx": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 5000000.0,
+      "invested_capital_or_window_anchor": 5000000.0,
+      "terminal_nav": 15961995.650713539,
+      "total_return": 2.1923991301427077,
+      "cagr": 0.12356638202341519,
+      "annualized_vol": 0.07248163326333812,
+      "sharpe": 1.375252604889435,
+      "max_drawdown": -0.05587966806244338,
+      "drawdown_peak_date": "2022-12-28",
+      "drawdown_trough_date": "2023-06-06",
+      "worst_period_return": -0.02027777022353916,
+      "best_period_return": 0.05008372970180752,
+      "expected_shortfall_95_loss": 0.008625176831977764,
+      "expected_shortfall_99_loss": 0.012371010650768685,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "total": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 99225000.0,
+      "invested_capital_or_window_anchor": 100000000.0,
+      "terminal_nav": 169293450.31776676,
+      "total_return": 0.6929345031776675,
+      "cagr": 0.05426268887793717,
+      "annualized_vol": 0.05598472237381461,
+      "sharpe": 0.6196492898147938,
+      "max_drawdown": -0.15584553698816428,
+      "drawdown_peak_date": "2021-09-14",
+      "drawdown_trough_date": "2022-10-20",
+      "worst_period_return": -0.03142707445656434,
+      "best_period_return": 0.025835614990487477,
+      "expected_shortfall_95_loss": 0.00789250135246783,
+      "expected_shortfall_99_loss": 0.013668985197996463,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    }
+  },
+  "hybrid": {
+    "ficc": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 59400000.0,
+      "invested_capital_or_window_anchor": 60000000.0,
+      "terminal_nav": 102366735.74368006,
+      "total_return": 0.7061122623946676,
+      "cagr": 0.05508349882984542,
+      "annualized_vol": 0.06148099309303935,
+      "sharpe": 0.5821955944726016,
+      "max_drawdown": -0.19755130721574576,
+      "drawdown_peak_date": "2021-09-14",
+      "drawdown_trough_date": "2022-10-24",
+      "worst_period_return": -0.04296201529530985,
+      "best_period_return": 0.033643567371271166,
+      "expected_shortfall_95_loss": 0.00892896732533512,
+      "expected_shortfall_99_loss": 0.014463965563461304,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    },
+    "total": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 2504,
+      "returns": 2503,
+      "opening_net_nav": 99225000.0,
+      "invested_capital_or_window_anchor": 100000000.0,
+      "terminal_nav": 200964511.7818197,
+      "total_return": 1.0096451178181969,
+      "cagr": 0.07256689631051794,
+      "annualized_vol": 0.05465233522857951,
+      "sharpe": 0.9493156790132721,
+      "max_drawdown": -0.14426247728779285,
+      "drawdown_peak_date": "2021-09-14",
+      "drawdown_trough_date": "2022-10-20",
+      "worst_period_return": -0.03221810603162667,
+      "best_period_return": 0.02645559334594072,
+      "expected_shortfall_95_loss": 0.00762003510283613,
+      "expected_shortfall_99_loss": 0.013129350337629946,
+      "es99_tail_observations": 26,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 252
+    }
+  },
+  "hybrid_condition": "FICC drift is fitted with hindsight to forward-case terminal CAGR; other four histories unchanged. Not blind OOS or a forecast.",
+  "forward_20y": {
+    "classification": "conditional flat-carry 20Y scenario, not a forecast",
+    "terminal_usd": 175342771.83004293,
+    "cagr": 0.05508349882984542,
+    "credit_reinvestment_eay": 0.06066105900212734,
+    "cash_reinvestment_eay": 0.0368226235,
+    "fee_opportunity_hurdle": 0.05700425375140978,
+    "fee_future_value_usd": 4274717.714465767,
+    "no_default_assumed": true,
+    "put_payoff_in_base_case_usd": 0.0
+  },
+  "annual_gross_drift": 1.0378539499054302,
+  "weekly": {
+    "historical": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 521,
+      "returns": 520,
+      "opening_net_nav": 99225000.0,
+      "invested_capital_or_window_anchor": 100000000.0,
+      "terminal_nav": 169293450.31776676,
+      "total_return": 0.6929345031776675,
+      "cagr": 0.05426268887793717,
+      "annualized_vol": 0.06203649862360265,
+      "sharpe": 0.562065766022515,
+      "max_drawdown": -0.15055152190267185,
+      "drawdown_peak_date": "2020-12-31",
+      "drawdown_trough_date": "2022-10-21",
+      "worst_period_return": -0.06338716066121108,
+      "best_period_return": 0.041353149119862875,
+      "expected_shortfall_95_loss": 0.01889709327344704,
+      "expected_shortfall_99_loss": 0.03504941209411697,
+      "es99_tail_observations": 6,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 52
+    },
+    "hybrid": {
+      "start": "2016-09-30",
+      "end": "2026-09-17",
+      "years": 9.963039014373717,
+      "marks": 521,
+      "returns": 520,
+      "opening_net_nav": 99225000.0,
+      "invested_capital_or_window_anchor": 100000000.0,
+      "terminal_nav": 200964511.7818197,
+      "total_return": 1.0096451178181969,
+      "cagr": 0.07256689631051794,
+      "annualized_vol": 0.060757117433686614,
+      "sharpe": 0.8551857251158943,
+      "max_drawdown": -0.13867404893483082,
+      "drawdown_peak_date": "2021-09-10",
+      "drawdown_trough_date": "2022-10-21",
+      "worst_period_return": -0.06297827569652881,
+      "best_period_return": 0.041890983656166725,
+      "expected_shortfall_95_loss": 0.01822015970054715,
+      "expected_shortfall_99_loss": 0.03391258613948709,
+      "es99_tail_observations": 6,
+      "risk_free": "2% effective annual with actual calendar-day gaps",
+      "annualization_periods": 52
+    }
+  },
+  "engine_rebuild_checks": {
+    "commodity": {
+      "method": "contract issue/roll/cashflow/mark engine re-executed from frozen causal index/vol/curve inputs",
+      "max_nav_difference_usd": 3.725290298461914e-09,
+      "pass": true
+    },
+    "crypto": {
+      "method": "contract issue/roll/cashflow/mark engine re-executed from frozen causal index/vol/curve inputs",
+      "max_nav_difference_usd": 9.313225746154785e-09,
+      "pass": true
+    },
+    "equities": {
+      "method": "5Y floor/call-spread issue/roll/mark engine re-executed from frozen causal basket index,vol and official Fed curve",
+      "max_nav_difference_usd": 3.1620264053344727e-05,
+      "pass": true
+    },
+    "ficc": {
+      "method": "frozen component accounting replay; six actual bond histories are NOT recreated",
+      "max_nav_difference_usd": 4.470348358154297e-08,
+      "pass": true
+    },
+    "fx": {
+      "method": "native model-return compounding and union-calendar forward carry; factor estimation itself is not rerun without external data",
+      "max_nav_difference_usd": 1.210719347000122e-07,
+      "pass": true
+    }
+  },
+  "metric_checks": {
+    "baseline.ficc.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.ficc.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.ficc.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.ficc.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.ficc.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.equities.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.equities.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.equities.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.equities.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.equities.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.commodities.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.commodities.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.commodities.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.commodities.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.commodities.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.crypto.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.crypto.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.crypto.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.crypto.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.crypto.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.fx.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.fx.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.fx.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.fx.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.fx.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.total.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "baseline.total.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.total.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.total.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "baseline.total.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.ficc.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "hybrid.ficc.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.ficc.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.ficc.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.ficc.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.total.terminal_nav": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "hybrid.total.cagr": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.total.sharpe": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.total.max_drawdown": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    },
+    "hybrid.total.annualized_vol": {
+      "absolute_error": 0.0,
+      "tolerance": 1e-10,
+      "pass": true
+    }
+  },
+  "module_sum_max_error_usd": 5.960464477539063e-08,
+  "fx_dollar_attribution": {
+    "cash_pnl_usd": 2963487.7621361716,
+    "factor_pnl_usd": 8992243.564393533,
+    "drag_pnl_usd": -993735.6758162486
+  },
+  "all_hashes_pass": true,
+  "all_checks_pass": true
+}
