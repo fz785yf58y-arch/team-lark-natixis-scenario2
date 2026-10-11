@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+downloads/
+results/local/
+.DS_Store
+*.xlsx
+*.pdf
+*.pptx
+*.log
