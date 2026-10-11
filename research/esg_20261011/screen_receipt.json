@@ -1,0 +1,131 @@
+{
+  "classification": "PROSPECTIVE RESEARCH SCREEN; not applied to frozen historical NAV, not trade approval",
+  "cutoff": "2026-09-17",
+  "evidence_rows": 9,
+  "entity_count": 6,
+  "eligible_dated_rows": 9,
+  "all_entity_approvals": "UNRESOLVED; no automatic pass",
+  "sha256_inputs": {
+    "evidence.csv": "6a4fbfb2b201d698ff0592240f5a12ad6b64cc601795b483940bc24cb3a31236",
+    "config.json": "2c25e39b86335c95b1b4fbbb11b5297e1d9d5eeb434245170cf93aecc82ff25e"
+  },
+  "results": [
+    {
+      "id": "TSMC_WATER",
+      "entity": "Taiwan Semiconductor Manufacturing Company Limited",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "TSMC_CARBON",
+      "entity": "Taiwan Semiconductor Manufacturing Company Limited",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "RELIANCE_FOSSIL",
+      "entity": "Reliance Industries Limited",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "RELIANCE_WATER_WASTE",
+      "entity": "Reliance Industries Limited",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "LGES_TRACEABILITY",
+      "entity": "LG Energy Solution Ltd.",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "LGES_LABOUR",
+      "entity": "LG Energy Solution Ltd.",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "TENCENT_ENERGY",
+      "entity": "Tencent",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "ALIBABA_EMISSIONS",
+      "entity": "Alibaba",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    },
+    {
+      "id": "MEITUAN_COURIERS",
+      "entity": "Meituan",
+      "dated_evidence_eligible": true,
+      "evidence_issues": [],
+      "investment_status": "HOLD_NEW_PENDING_FULL_REVIEW",
+      "remaining_checks": [
+        "dated legal and sanctions review",
+        "unresolved official controversy review",
+        "entity/product scope and bank-parent check"
+      ],
+      "rationale": "Dated disclosure is an input, not investment clearance."
+    }
+  ]
+}

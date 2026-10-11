@@ -1,0 +1,34 @@
+{
+  "classification": "PROSPECTIVE RESEARCH SCREEN; not applied to frozen historical NAV, not trade approval",
+  "cutoff": "2026-09-17",
+  "review_frequency": "quarterly plus event-driven and before issuance/renewal",
+  "freshness_max_days": 548,
+  "hard_rules": [
+    "Verified legal prohibition -> EXCLUDE_NEW. Missing dated legal/counterparty check -> HOLD_NEW.",
+    "Official unresolved material ESG finding or missing required mitigation evidence -> HOLD_NEW.",
+    "Targets/themes/current undated ratings do not substitute for dated results.",
+    "Assess bank parent and product legal rights separately from underlying-company review."
+  ],
+  "minimum_fields": [
+    "publication_date",
+    "source_url",
+    "publication_evidence_url",
+    "instrument_scope",
+    "source_locator",
+    "risk_flag",
+    "trigger",
+    "action"
+  ],
+  "note": "18-month reporting freshness is a proposed conservative operating convention, not an official competition requirement. Dated evidence alone does not clear controversy/legal gates.",
+  "inputs": [
+    "evidence.csv"
+  ],
+  "does_not_change": [
+    "holdings",
+    "historical NAV",
+    "participation",
+    "fees",
+    "cash protection",
+    "quotes"
+  ]
+}
