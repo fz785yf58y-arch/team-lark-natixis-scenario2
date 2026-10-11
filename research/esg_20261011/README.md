@@ -1,19 +1,31 @@
-# Prospective public-source ESG evidence prototype
+# ESG review for our credit issuers
 
-This research addendum supplements Team LARK's Scenario2 pitch. It was prepared11Oct2026 using a knowledge cutoff of **17Sep2026**. It was **not applied to the previously frozen historical backtest**. No performance uplift, issuer quote, issued contract, investment clearance or ESG certification is claimed.
+We prepared these notes on 11 October 2026 using information published by **17 September 2026**. They cover the six credit issuer groups in our proposal: TSMC, Reliance, LG Energy Solution, Tencent, Alibaba and Meituan.
 
-Run with Python3 standard library only:
+We wanted the ESG review to address risks that could affect the credit case, rather than treating a renewable-energy theme as an ESG label. The evidence covers water and power continuity, fossil-fuel transition, mineral sourcing and labour, data-centre energy use, emissions reporting and courier safety.
+
+This review is separate from our frozen historical backtest. We have not changed its holdings or NAVs, or attributed a return improvement to these checks.
+
+## Run the check
+
+From this directory, run:
 
 ```sh
 python3 run_screen.py --output screen_receipt.json
 ```
 
-The program reads the archived `evidence.csv` and `config.json`; it does not fetch current data, generate new company facts, trade or alter holdings. The CSV preserves public URLs, release dates, entity/instrument scopes, source locators, material-risk triggers and gaps. Original copyrighted reports and personal local paths are intentionally excluded from this package.
+The script uses Python's standard library and reads `evidence.csv` and `config.json`. The CSV records source URLs, publication dates, the entity or instrument covered, report locations, material risks and missing evidence. The script checks those records against our date rules. It does not fetch new company information or alter portfolio positions.
 
-A month-only date is an interval: availability uses month-end while freshness uses month-start. Both checks therefore use the conservative end for their purpose. A proposed548-day reporting freshness convention is a research operating choice, not an official competition requirement. Official published evidence after17Sep2026 is excluded, even if its measurement period was earlier. Current undated ratings cannot establish cutoff-date scores.
+The saved result has nine evidence rows covering six groups. All nine meet the date checks. **All six groups remain `HOLD_NEW_PENDING_FULL_REVIEW`.** Passing the source-date check means the evidence is usable for review, not that the issuer has received investment approval.
 
-Dated-source eligibility is **not investment approval**. All reviewed entities remain on hold for additional exposure/renewals pending dated legal/sanctions, unresolved controversy, entity/product-scope and bank-parent reviews. Officially verified legal prohibitions warrant exclusion; material findings or evidence gaps warrant committee review and a freeze of additions/renewals. This prototype does not assert absence of controversies or automatically force liquidation.
+## How we would use the review
 
-The six entities are TSMC, Reliance, LG Energy Solution, Tencent, Alibaba and Meituan. Risks cover water/power continuity, fossil transition, mineral traceability/labour, data-centre energy, emissions methodology and courier safety. Public frameworks and targets are not proofs of safe outcomes. Multiple underlying companies do not diversify a common note-issuing bank.
+We would review an issuer before a new investment or renewal, quarterly, and after a material event. A verified legal prohibition would exclude new exposure. An unresolved material finding or missing required evidence would pause additions and renewals until the committee reviews it. A flag alone would not automatically force an illiquid sale.
 
-Before adopting any changed investment selection, reprice participation/protection/costs and rerun comparable cash-flow/NAV risk checks. Original bank quote, final-term and legal-right gates remain open.
+We still need dated legal and sanctions checks, controversy follow-up, confirmation that group evidence applies to the actual obligor, and a separate review of the note-issuing bank parent. Several underlying companies can still sit behind a claim on one bank. Public targets and policies are useful evidence, but do not prove remediation or safe outcomes. These notes are not an ESG certification, a green-bond classification, an issued contract or a bank quote.
+
+## Dates and sources
+
+Our proposed freshness limit is 548 days, roughly 18 months. It is our working convention, not a competition requirement. When a source only states its publication month, we use month-end for availability and month-start for freshness. This keeps both checks conservative. Reports published after 17 September 2026 are excluded even if they describe an earlier reporting period. An undated current rating cannot establish the score available at the cutoff.
+
+The package contains the source links and our evidence records, rather than copies of copyrighted reports or personal file paths. Before a screen leads to a basket change, we would reprice participation, protection and fees, then rerun comparable cash-flow and NAV tests. Final issuer terms, legal rights and quotations are still outstanding.
