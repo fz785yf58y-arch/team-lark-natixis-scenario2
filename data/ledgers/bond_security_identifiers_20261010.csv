@@ -1,0 +1,13 @@
+﻿instrument,identifier_type,identifier,trading_line,evidence_scope,source
+TSMC Arizona 4.500% 2052,CUSIP,872898AJ0,144A / USD,SEC issue terms identify issue; CUSIP cross-checked on bond reference page,https://www.sec.gov/Archives/edgar/data/1046179/000119312522110138/d257631dfwp.htm; https://atlantisdatasolutions.com/bond/BBG016W8XR42
+TSMC Arizona 4.500% 2052,ISIN,US872898AJ06,144A / USD,Issue-level identifier cross-check; use CUSIP/ISIN in agency terminal search,https://atlantisdatasolutions.com/bond/BBG016W8XR42
+TSMC Arizona 4.500% 2052,FIGI,BBG016W8XR42,144A / USD,Secondary bond reference only,https://atlantisdatasolutions.com/bond/BBG016W8XR42
+Tencent Holdings 3.925% 2038,CUSIP / ISIN,88032WAH9 / US88032WAH97,Rule 144A / USD,2018 pricing supplement; paired Regulation S identifier also available,https://www.fubon.com/banking/document/Straight_bond_manage_securities/TW/WMBB18030008.pdf
+Tencent Holdings 3.925% 2038,CUSIP / ISIN,88032XAH7 / US88032XAH70,Regulation S / USD,2018 pricing supplement,https://www.fubon.com/banking/document/Straight_bond_manage_securities/TW/WMBB18030008.pdf
+LG Energy Solution 5.375% 2030,CUSIP / ISIN,50205MAG4 / US50205MAG42,Rule 144A / USD,2025 final offering circular,https://links.sgx.com/FileOpen/LG%20Energy%20Solution%2C%20Ltd.%20_Citi%20USD%20Quad-tranche%20Standalone%20-%20Final%20Offering%20Circular%20%28dd%2025.03.25%29.ashx?App=Prospectus&FileID=65399
+LG Energy Solution 5.375% 2030,CUSIP / ISIN,Y5S5CGAP7 / USY5S5CGAP79,Regulation S / USD,2025 final offering circular and SGX listing,https://links.sgx.com/FileOpen/LG%20Energy%20Solution%2C%20Ltd.%20_Citi%20USD%20Quad-tranche%20Standalone%20-%20Final%20Offering%20Circular%20%28dd%2025.03.25%29.ashx?App=Prospectus&FileID=65399
+Meituan 4.750% 2032,CUSIP / ISIN,58533EAH6 / US58533EAH62,Rule 144A / USD,2025 offering memorandum,https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1106/2025110600211.pdf
+Meituan 4.750% 2032,CUSIP / ISIN,G59669AH7 / USG59669AH76,Regulation S / USD,Executed indenture / issue document,https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1106/2025110600211.pdf
+Alibaba Group 3.250% 2061,CUSIP / ISIN,01609WBA9 / US01609WBA99,Rule 144A / USD,SEC final offering supplement identifies 2061 note,https://www.sec.gov/Archives/edgar/data/1577552/000110465921012438/a21-1839_8fwp.htm
+Reliance Industries 3.625% 2052,ISIN,US759470BD89,Rule 144A / USD,SGX issue documents/listing notice,https://links.sgx.com/1.0.0/prospectus-circulars/46534
+Reliance Industries 3.625% 2052,ISIN,USY72570AU16,Regulation S / USD,SGX notice lists 2052 note in senior unsecured USD note class,https://links.sgx.com/1.0.0/corporate-announcements/4XGRB3DDFC58L69D/6e2a3fb187b1853d8b5ff04e7755f349ddeafa7a3cb6b18bc5498e9e8f58631e
